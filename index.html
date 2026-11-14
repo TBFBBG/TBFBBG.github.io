@@ -1,320 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boubacar MANE - Développeur Full-Stack</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boubacar MANE — Informatique de Gestion</title>
+  <meta name="description" content="Portfolio de Boubacar MANE, Licencié en Informatique de Gestion : maintenance informatique, réseaux, systèmes et développement d'applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">BM</div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Accueil</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Boubacar MANE</h1>
-                <h2>Développeur Full-Stack & Technicien Réseaux</h2>
-                <p>Je crée des solutions numériques performantes et innovantes</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/profile.png" alt="Boubacar MANE">
-            </div>
+  <header class="nav" id="nav">
+    <a href="#accueil" class="logo">BM<span>.</span></a>
+    <nav id="menu" aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projet">Projet</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Changer de thème">◐</button>
+      <button class="icon-btn burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Bonjour, je suis</p>
+          <h1>Boubacar <span class="grad">MANE</span></h1>
+          <p class="role">Informatique de Gestion · <span id="typed"></span><span class="cursor">|</span></p>
+          <p class="lead">Titulaire d'une Licence en Informatique de Gestion, je mets mes compétences en maintenance, réseaux, systèmes et développement d'applications au service du bon fonctionnement des outils informatiques et de la digitalisation des activités.</p>
+          <div class="cta">
+            <a href="#contact" class="btn primary">Me contacter</a>
+            <a href="#projet" class="btn ghost">Voir mon projet</a>
+          </div>
+          <p class="loc">📍 Tambacounda, Sénégal</p>
         </div>
+
+        <div class="hero-card reveal" aria-hidden="true">
+          <div class="term-bar"><i></i><i></i><i></i><span>profil.js</span></div>
+<pre><code><span class="k">const</span> boubacar = {
+  <span class="p">formation</span>: <span class="s">"Licence Info. de Gestion"</span>,
+  <span class="p">ecole</span>: <span class="s">"ENSUP Afrique"</span>,
+  <span class="p">domaines</span>: [<span class="s">"Réseaux"</span>, <span class="s">"Systèmes"</span>,
+             <span class="s">"Dev"</span>, <span class="s">"Support"</span>],
+  <span class="p">langues</span>: [<span class="s">"FR"</span>, <span class="s">"EN"</span>],
+  <span class="p">disponible</span>: <span class="k">true</span>
+};</code></pre>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">À propos de moi</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Diplômé d'une Licence en Informatique de Gestion à l'ENSUP AFRIQUE, je suis passionné par le développement d'applications web et mobiles ainsi que par l'administration des systèmes et réseaux.
-                    </p>
-                    <p>
-                        Mon objectif est de mettre mes compétences techniques et ma créativité au service de projets innovants tout en continuant à apprendre et à me perfectionner.
-                    </p>
-                    <div class="personal-info">
-                        <div>
-                            <span>Nom :</span>
-                            <p>Boubacar MANE</p>
-                        </div>
-                        <div>
-                            <span>Email :</span>
-                            <p>contactboubacarmane@gmail.com</p>
-                        </div>
-                        <div>
-                            <span>Téléphone :</span>
-                            <p>+221 77 999 92 62</p>
-                        </div>
-                        <div>
-                            <span>Localisation :</span>
-                            <p>Dakar, Sénégal</p>
-                        </div>
-                    </div>
-                    <a href="https://t.me/+0lxTVRyMK1lhYjk0" class="btn btn-primary">Télécharger mon CV</a>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>3+</h3>
-                        <p>Années d'expérience académique</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>10+</h3>
-                        <p>Projets réalisés</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>5+</h3>
-                        <p>Technologies maîtrisées</p>
-                    </div>
-                </div>
+    <!-- A PROPOS -->
+    <section id="apropos" class="section">
+      <div class="container">
+        <h2 class="title reveal"><span>01</span> À propos</h2>
+        <div class="about-grid">
+          <div class="reveal">
+            <p>Diplômé en <strong>Informatique de Gestion</strong> (ENSUP Afrique, 2022–2025), j'ai une formation polyvalente qui couvre le matériel, les réseaux, les systèmes d'exploitation et le développement logiciel.</p>
+            <p>J'aime résoudre des problèmes concrets : dépanner un poste, diagnostiquer une panne réseau, accompagner un utilisateur ou concevoir une application utile. Mon objectif est de contribuer à la <strong>digitalisation</strong> et à la fiabilité des outils numériques d'une entreprise.</p>
+            <div class="chips">
+              <span>Rigueur</span><span>Autonomie</span><span>Esprit d'analyse</span>
+              <span>Adaptabilité</span><span>Esprit d'équipe</span><span>Sens du service</span>
             </div>
+          </div>
+          <div class="stats reveal">
+            <div class="stat"><b data-count="3">0</b><small>années de formation</small></div>
+            <div class="stat"><b data-count="6">0</b><small>langages maîtrisés</small></div>
+            <div class="stat"><b data-count="3">0</b><small>systèmes (Windows, Linux, Server)</small></div>
+            <div class="stat"><b data-count="3">0</b><small>bases de données</small></div>
+          </div>
         </div>
+
+        <div class="edu reveal">
+          <h3>Formation</h3>
+          <div class="edu-item">
+            <div>
+              <strong>Licence en Informatique de Gestion</strong>
+              <p>ENSUP AFRIQUE</p>
+            </div>
+            <span class="badge">2022 – 2025 · Licence validée</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Mes compétences</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Développement Mobile</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Flutter (Dart)</span>
-                            <span>85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Java Android</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Développement Web</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>HTML/CSS/JS</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>PHP/WordPress</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Systèmes & Réseaux</h3>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Windows Server/Linux</span>
-                            <span>75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%;"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>Cisco Packet Tracer</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- COMPETENCES -->
+    <section id="competences" class="section alt">
+      <div class="container">
+        <h2 class="title reveal"><span>02</span> Compétences</h2>
+        <div class="filters reveal" id="filters">
+          <button class="active" data-f="all">Tout</button>
+          <button data-f="infra">Infrastructure</button>
+          <button data-f="dev">Développement</button>
+          <button data-f="data">Données</button>
         </div>
+        <div class="skills-grid">
+          <article class="card skill reveal" data-cat="infra">
+            <div class="ico">🛠️</div>
+            <h3>Maintenance</h3>
+            <p>Installation, configuration et dépannage de postes informatiques.</p>
+          </article>
+          <article class="card skill reveal" data-cat="infra">
+            <div class="ico">🌐</div>
+            <h3>Réseaux</h3>
+            <p>LAN, configuration réseau, diagnostic de connectivité.</p>
+            <ul class="tags"><li>Cisco Packet Tracer</li></ul>
+          </article>
+          <article class="card skill reveal" data-cat="infra">
+            <div class="ico">🖥️</div>
+            <h3>Systèmes</h3>
+            <ul class="tags"><li>Windows</li><li>Linux</li><li>Windows Server</li></ul>
+          </article>
+          <article class="card skill reveal" data-cat="dev">
+            <div class="ico">💻</div>
+            <h3>Développement</h3>
+            <ul class="tags"><li>Python</li><li>Java</li><li>JavaScript</li><li>PHP</li><li>C</li><li>Flutter / Dart</li></ul>
+          </article>
+          <article class="card skill reveal" data-cat="dev">
+            <div class="ico">🎨</div>
+            <h3>Web</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>WordPress</li></ul>
+          </article>
+          <article class="card skill reveal" data-cat="data">
+            <div class="ico">🗄️</div>
+            <h3>Bases de données</h3>
+            <ul class="tags"><li>MySQL</li><li>MongoDB</li><li>Oracle</li></ul>
+          </article>
+          <article class="card skill reveal" data-cat="dev">
+            <div class="ico">🧰</div>
+            <h3>Outils</h3>
+            <ul class="tags"><li>VS Code</li><li>Android Studio</li></ul>
+          </article>
+        </div>
+
+        <div class="langs reveal">
+          <h3>Langues</h3>
+          <div class="lang"><span>Français</span><div class="bar"><i style="--w:80%"></i></div><small>Bon niveau professionnel</small></div>
+          <div class="lang"><span>Anglais</span><div class="bar"><i style="--w:30%"></i></div><small>Débutant</small></div>
+          <div class="lang"><span>Espagnol</span><div class="bar"><i style="--w:30%"></i></div><small>Débutant</small></div>
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Mes projets</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="assets/images/project1.jpg" alt="Souniou Conseiller">
-                    <div class="project-info">
-                        <h3>Souniou Conseiller</h3>
-                        <p>Application Android pour l'orientation professionnelle des étudiants</p>
-                        <div class="project-tech">
-                            <span>Java</span>
-                            <span>XML</span>
-                            <!--<span>SQLite</span>-->
-                        </div>
-                        <div class="project-links">
-                            <a href="https://t.me/+0lxTVRyMK1lhYjk0" target="_blank"><i class="fas fa-external-link-alt"></i> Voir</a>
-                            <a href="https://github.com/TBFBBG/SouniouConsiellerPro2.git" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/images/project2.jpg" alt="Clone Wave">
-                    <div class="project-info">
-                        <h3>Clone Wave Mobile Money</h3>
-                        <p>Reproduction des fonctionnalités principales de l'application Wave</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <!--<span>Firebase</span>-->
-                        </div>
-                        <div class="project-links">
-                            <a href="https://t.me/+0lxTVRyMK1lhYjk0" target="_blank"><i class="fas fa-external-link-alt"></i> Voir</a>
-                            <a href="https://github.com/TBFBBG/Wave.git" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/images/project3.jpg" alt="Quiz App">
-                    <div class="project-info">
-                        <h3>Quiz App</h3>
-                        <p>Application de quiz interactive avec notation en temps réel</p>
-                        <div class="project-tech">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://t.me/+0lxTVRyMK1lhYjk0" target="_blank"><i class="fas fa-external-link-alt"></i> Voir</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="assets/images/project4.jpg" alt="Réseau d'entreprise">
-                    <div class="project-info">
-                        <h3>Simulation Réseau d'Entreprise</h3>
-                        <p>Modélisation d'un LAN avec VLANs, DHCP et pare-feu</p>
-                        <div class="project-tech">
-                            <span>Cisco Packet Tracer</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://t.me/+0lxTVRyMK1lhYjk0" target="_blank"><i class="fas fa-external-link-alt"></i> Voir</a>
-                            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
-                        </div>
-                    </div>
-                </div>
+    <!-- PROJET -->
+    <section id="projet" class="section">
+      <div class="container">
+        <h2 class="title reveal"><span>03</span> Projet académique</h2>
+        <article class="project reveal">
+          <div class="project-visual" aria-hidden="true">
+            <div class="phone">
+              <div class="notch"></div>
+              <div class="screen">
+                <b>AutoConseil</b>
+                <div class="row"></div><div class="row s"></div><div class="row"></div>
+                <div class="pill">Recommandé pour vous</div>
+              </div>
             </div>
-        </div>
+          </div>
+          <div class="project-body">
+            <span class="badge">Application mobile · Flutter / Dart</span>
+            <h3>AutoConseil</h3>
+            <p>Application mobile de recommandation automobile, qui aide l'utilisateur à trouver le véhicule le plus adapté à ses besoins.</p>
+            <ul class="check">
+              <li>Analyse des besoins et conception de l'application</li>
+              <li>Développement de l'interface et des fonctionnalités</li>
+              <li>Gestion et structuration des données</li>
+              <li>Mise en place d'un système de recommandation</li>
+            </ul>
+            <ul class="tags"><li>Flutter</li><li>Dart</li><li>Android Studio</li></ul>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contactez-moi</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>contactboubacarmane@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Téléphone</h3>
-                            <p>+221 77 999 92 62</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Localisation</h3>
-                            <p>Dakar, Sénégal</p>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Votre email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Sujet" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Votre message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                </form>
-            </div>
+    <!-- EXPERIENCES -->
+    <section id="experiences" class="section alt">
+      <div class="container">
+        <h2 class="title reveal"><span>04</span> Expériences pratiques</h2>
+        <div class="timeline">
+          <div class="t-item reveal"><h3>Installation de systèmes</h3><p>Installation et configuration de systèmes Windows et Linux.</p></div>
+          <div class="t-item reveal"><h3>Maintenance et dépannage</h3><p>Maintenance informatique et résolution de pannes matérielles et logicielles.</p></div>
+          <div class="t-item reveal"><h3>Réseaux locaux</h3><p>Configuration de réseaux locaux et diagnostic de problèmes réseau.</p></div>
+          <div class="t-item reveal"><h3>Sauvegarde et récupération</h3><p>Sauvegarde et récupération de données.</p></div>
+          <div class="t-item reveal"><h3>Assistance aux utilisateurs</h3><p>Support et accompagnement des utilisateurs au quotidien.</p></div>
         </div>
+        <p class="interests reveal"><strong>Centres d'intérêt :</strong> Informatique · Technologies · Réseaux · Développement d'applications · Innovation numérique</p>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Boubacar MANE</h3>
-                    <p>Développeur Full-Stack & Technicien Réseaux passionné par la création de solutions numériques innovantes.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Liens rapides</h3>
-                    <ul>
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h3>Réseaux sociaux</h3>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/boubacar-mane-7321aa2a5/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/TBFBBG"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Boubacar MANE. Tous droits réservés.</p>
-            </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="title reveal"><span>05</span> Contact</h2>
+        <div class="contact-grid">
+          <div class="reveal">
+            <p>Une opportunité, un stage, un projet ? N'hésitez pas à m'écrire. Références disponibles sur demande.</p>
+            <ul class="contact-list">
+              <li><span>✉️</span><a href="mailto:contactboubacarmane@gmail.com">contactboubacarmane@gmail.com</a></li>
+              <li><span>📞</span><a href="tel:+221779999262">77 999 92 62</a></li>
+              <li><span>📍</span>Tambacounda, Sénégal</li>
+            </ul>
+          </div>
+          <form class="card form reveal" id="contactForm" novalidate>
+            <label>Nom
+              <input type="text" name="nom" required autocomplete="name">
+            </label>
+            <label>Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+            <label>Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Envoyer par email</button>
+            <p class="form-msg" id="formMsg" role="status"></p>
+          </form>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer class="footer">
+    <p>© <span id="year"></span> Boubacar MANE · Tambacounda, Sénégal</p>
+    <a href="#accueil">↑ Haut de page</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
